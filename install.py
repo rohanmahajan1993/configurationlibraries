@@ -13,7 +13,6 @@ def install():
           destination_path = os.path.join(home_dir, destination_file_name[2:])
        else:	
 	  destination_path = destination_file_name
-       print "source path", source_path, destination_path
        if os.path.exists(destination_path):
           os.unlink(destination_path)
        os.link(source_path, destination_path)
