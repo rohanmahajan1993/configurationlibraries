@@ -13,3 +13,4 @@ export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND" #sha
 export EDITOR=vim
 
 source ~/.bash_aliases
+source ~/.bash_functions
