@@ -4,6 +4,8 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#rc()
 
+"let Vundle manage Vundle, required
+ Plugin 'VundleVim/Vundle.vim
 call vundle#end()            
 filetype plugin indent on  
 
@@ -21,3 +23,7 @@ set hls " highlight search
 set noshowmode "doesn't show the mode
 set ruler "shows row and column you are in"
 set scrolloff=5 "makes sure your line is not the last line in vim"
+
+set wildmode=longest,list "fancy menu comes up when you vsplit
+set wildmenu
+
