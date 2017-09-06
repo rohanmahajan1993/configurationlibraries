@@ -16,5 +16,8 @@ set autoread "if file is chaned outside of vim, make it changeable inside of vim
 set backspace "useful backspace options"
 set nu " number lines
 
-set incsearch " incremental search (as string is being typed)
+set incsearch "incremental search (as string is being typed)
 set hls " highlight search
+set noshowmode "doesn't show the mode
+set ruler "shows row and column you are in"
+set scrolloff=5 "makes sure your line is not the last line in vim"
