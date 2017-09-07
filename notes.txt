@@ -2,3 +2,11 @@ This directory houses information for various configuration files.
 There are two components. One is the script that creates the proper the hard
 links from your directory to the vimrc. The second part is the links themselves.
 We use the json script to install files.  
+fdsafasdf
+     
+     
+                            
+			    
+
+
+
