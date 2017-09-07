@@ -16,6 +16,7 @@ pip install pylint
 if [ "$YOU_COMPLETE_MISSING" = true ]; then
   cd $YOU_COMPLETE_ME_DIR
   brew install cmake
+  sudo apt-get install build-essential cmake
   git submodule update --init --recursive
   ./install.py --clang-completer
 fi
