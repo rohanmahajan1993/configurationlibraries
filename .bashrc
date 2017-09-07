@@ -1,5 +1,4 @@
 # History related bash rc commands
-
 HISTSIZE=1048576 #How many to keep in memory
 HISTFILE="$HOME/.bash_history"
 SAVEHIST=$HISTSIZE #How many to keep in files
