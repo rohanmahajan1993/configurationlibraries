@@ -26,5 +26,5 @@ set scrolloff=5 "makes sure your line is not the last line in vim"
 
 set wildmode=longest,list "fancy menu comes up when you vsplit
 set wildmenu
-set clipboard=unnamed
-set pastetoggle=<F5>
+set pastetoggle=<F5> "when pasting multiline files want to toggle or use set paste to avoid autoindent
+set clipboard=unnamed "have to install vim with clipbaord enabled; be careful about vi
