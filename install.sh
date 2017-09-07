@@ -6,8 +6,12 @@ if [ ! -d $VUNDLE_DIR ]; then
 fi
 python install.py
 vim +PluginInstall +qall
-brew install cmake
-cd ~/.vim/bundle/YouCompleteMe
-git submodule update --init --recursive
-./install.py --clang-completer
+
+YOU_COMPLETE_ME_DIR=~/.vim/bundle/YouCompleteMe
+if [ ! -d $YOUCOMPLETEME_DIR ]; then
+  cd $YOU_COMPLETE_ME_DIR
+  brew install cmake
+  git submodule update --init --recursive
+  ./install.py --clang-completer
+fi
 
