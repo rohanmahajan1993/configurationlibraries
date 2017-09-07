@@ -10,6 +10,7 @@ call vundle#rc()
  Plugin 'ervandew/supertab'
  Plugin 'scrooloose/syntastic'
  Plugin 'Valloric/YouCompleteMe'
+ Plugin 'nathanaelkane/vim-indent-guides'
 call vundle#end()            
 filetype plugin indent on  
 
@@ -33,8 +34,13 @@ set wildmode=longest,list "fancy menu comes up when you vsplit
 set wildmenu
 set pastetoggle=<F5> "when pasting multiline files want to toggle or use set paste to avoid autoindent
 set clipboard=unnamed "have to install vim with clipbaord enabled; be careful about vi
-
+set showmatch "Used for seeing matching parenthesis
 map <C-n> :NERDTreeToggle<CR>
+
+set tabstop=2 "how many columns a tab is
+set shiftwidth=2 "what happens when we shift indentation
+set softtabstop=2
+set expandtab "tab will be replaced with spaces
 
 "set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
