@@ -15,7 +15,8 @@ set noswapfile "no swap files"
 set number "show the line numbers"
 set mouse=a "allows you to move the mouse to click and scroll"
 set autoread "if file is chaned outside of vim, make it changeable inside of vim"
-set backspace "useful backspace options"
+
+set backspace=indent,eol,start
 set nu " number lines
 
 set incsearch "incremental search (as string is being typed)
