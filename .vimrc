@@ -26,4 +26,5 @@ set scrolloff=5 "makes sure your line is not the last line in vim"
 
 set wildmode=longest,list "fancy menu comes up when you vsplit
 set wildmenu
-
+set clipboard=unnamed
+set pastetoggle=<F5>
