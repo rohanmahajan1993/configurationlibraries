@@ -9,6 +9,7 @@ call vundle#rc()
  Plugin 'scrooloose/nerdtree.git'
  Plugin 'ervandew/supertab'
  Plugin 'scrooloose/syntastic'
+ Plugin 'Valloric/YouCompleteMe'
 call vundle#end()            
 filetype plugin indent on  
 
