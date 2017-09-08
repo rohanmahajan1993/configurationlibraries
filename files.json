@@ -1,7 +1,9 @@
 {
   ".vimrc": "~/.vimrc",
   ".bashrc": "~/.bashrc",
-  ".bash_aliases": "~/.bash_aliases" ,
+  ".bash_aliases_common": "~/.bash_aliases_common" ,
+  ".bash_aliases_linux": "~/.bash_aliases_linux" ,
+  ".bash_aliases_mac": "~/.bash_aliases_mac" ,
   ".bash_functions": "~/.bash_functions",
   ".bash_profile": "~/.bash_profile"
 }

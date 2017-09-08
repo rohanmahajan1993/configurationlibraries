@@ -11,5 +11,5 @@ export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND" #sha
 #Set up the default editor
 export EDITOR=vim
 
-source ~/.bash_aliases
+source ~/.bash_aliases_common
 source ~/.bash_functions
