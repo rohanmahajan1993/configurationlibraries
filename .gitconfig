@@ -4,3 +4,7 @@
 
 [github]
 	user = rohanmahajan1993
+[core]
+	excludesfile = ~/.gitignore
+[color]
+	ui = auto
