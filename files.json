@@ -1,5 +1,6 @@
 {
   ".vimrc": "~/.vimrc",
+  ".gitconfig": "~/.gitconfig",
   ".bashrc": "~/.bashrc",
   ".bash_aliases_common": "~/.bash_aliases_common" ,
   ".bash_aliases_linux": "~/.bash_aliases_linux" ,
