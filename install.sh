@@ -48,6 +48,7 @@ function process_you_complete {
 #Seperation of concerns with check and handle 
 function handle_operating_system {
   if [ "$IS_MAC" = true ]; then
+    brew install vim
     echo "source ~/.bash_aliases_mac" >> ~/.bash_aliases_common
   elif [ "$IS_LINUX" = true ]; then
     echo "source ~/.bash_aliases_linux" >> ~/.bash_aliases_common
