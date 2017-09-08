@@ -58,12 +58,14 @@ function handle_operating_system {
 function main {
   check_operating_sytem
   check_you_complete
+  VUNDLE_DIR=~/.vim/bundle/Vundle.vim
   if [ ! -d $VUNDLE_DIR ]; then
     git clone https://github.com/VundleVim/Vundle.vim.git $VUNDLE_DIR
   fi
   python install.py
-  vim +PluginInstall +qall
   process_you_complete
+  python install.py
+  vim +PluginInstall +qall
   pip install pylint
   handle_operating_system
 }
