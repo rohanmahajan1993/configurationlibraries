@@ -1,5 +1,27 @@
 #!/bin/bash
 
+case "$(uname -s)" in
+   Darwin)
+     IS_MAC=true
+     echo 'Mac OS X'
+     ;;
+
+   Linux)
+     echo 'Linux'
+     IS_LINUX=true
+     ;;
+
+   CYGWIN*|MINGW32*|MSYS*)
+     echo 'MS Windows'
+     IS_CYGWIN=true
+     ;;
+
+   *)
+     echo 'could not find other statements' 
+     ;;
+esac
+
+
 YOU_COMPLETE_ME_DIR=~/.vim/bundle/YouCompleteMe
 if [ ! -d $YOU_COMPLETE_ME_DIR ]; then
   echo "entering the first if statement"
