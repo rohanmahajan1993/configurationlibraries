@@ -8,3 +8,5 @@
 	excludesfile = ~/.gitignore
 [color]
 	ui = auto
+[alias]
+  browse = "!f() { REPO_URL=$(git config remote.origin.url); open ${REPO_URL%%.git}; }; f"

@@ -1,4 +1,4 @@
-alias diskspace="du -S | sort -n -r |more"
+alias diskspace="du -s| sort -n -r |more"
 alias p="ps aux"
 alias t="2>&1 | tee log.txt"
 alias galias="git config --list | grep alias"
