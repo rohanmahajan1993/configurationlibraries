@@ -10,3 +10,9 @@
 	ui = auto
 [alias]
   browse = "!f() { REPO_URL=$(git config remote.origin.url); open ${REPO_URL%%.git}; }; f"
+  c = !git add -A && git commit -m "commit"
+  p = !git c && git push origin HEAD
+  unstage = !git reset --mixed
+  unstagedelete = !git reset --hard
+  remotereset = git reset --hard origin/master
+  localreset =  git reset --hard master
