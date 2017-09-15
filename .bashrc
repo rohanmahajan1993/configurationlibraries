@@ -4,9 +4,9 @@ HISTFILE="$HOME/.bash_history"
 SAVEHIST=$HISTSIZE #How many to keep in files
 shopt -s histappend # append to history file
 
-export HISTCONTROL=erasedups #erase duplications
+export HISTCONTROL=erasedups:ignoredups #erase duplications
 # Share between terminals; basically, loads history between each bash commandsn
-export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND" #share between terminals
+PROMPT_COMMAND="history -n; history -w; history -c; history -r; $PROMPT_COMMAND"
 
 #Set up the default editor
 export EDITOR=vim
